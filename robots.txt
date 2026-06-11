@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://worqsense.com/sitemap.xml
