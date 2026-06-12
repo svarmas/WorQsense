@@ -181,6 +181,49 @@ body[data-hero="stacked"] .hero__meta-item:last-child { border-right:none; }
 
 
 
+/* ── Credential row (below hero) ────────────────────────────────────────── */
+.credentials-row {
+  background: var(--paper-sunk);
+  border-bottom: 1px solid var(--hair-strong);
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.credentials-row__item {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  padding: 1.1rem clamp(1.5rem, 4vw, 3.5rem);
+  text-align: center;
+  min-width: 200px;
+  flex: 1;
+}
+.credentials-row__label {
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.credentials-row__value {
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: .01em;
+}
+.credentials-row__divider {
+  width: 1px;
+  background: var(--hair-strong);
+  margin-block: .75rem;
+  flex-shrink: 0;
+}
+@media (max-width: 640px) {
+  .credentials-row { flex-direction: column; }
+  .credentials-row__divider { width: auto; height: 1px; margin: 0 1.5rem; }
+  .credentials-row__item { padding: .9rem 1.5rem; }
+}
+
 /* ── Client logo strip ─────────────────────────────────────────────────── */
 .client-logos { padding-block: clamp(3rem, 5vw, 4.5rem); }
 .client-logo__grid {
@@ -1232,3 +1275,239 @@ body[data-hero="split"] .hero__label {
 }
 .contact-detail a, .contact-detail p { font-size: .95rem; color: var(--text-muted); display: block; margin: 0; }
 .contact-detail a:hover { color: var(--accent); }
+
+/* ── AWI Explainer box ──────────────────────────────────────────────────── */
+.awi-explainer__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: start;
+}
+.awi-explainer__abbr {
+  color: var(--cta);
+}
+.awi-explainer__why {
+  border-left: 1px solid var(--hair-ink);
+  padding-left: clamp(1.5rem, 4vw, 3rem);
+}
+.awi-explainer__list {
+  list-style: none;
+  padding: 0;
+  margin: var(--s-6) 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-7);
+}
+.awi-explainer__list li {
+  display: flex;
+  gap: var(--s-4);
+  align-items: flex-start;
+}
+.awi-explainer__icon {
+  color: var(--cta);
+  font-size: 1.1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: .15rem;
+}
+.awi-explainer__list strong {
+  display: block;
+  color: var(--on-ink);
+  font-size: .95rem;
+  font-weight: 700;
+  margin-bottom: var(--s-2);
+}
+.awi-explainer__list p {
+  color: var(--on-ink-muted);
+  font-size: .875rem;
+  line-height: 1.7;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .awi-explainer__grid { grid-template-columns: 1fr; }
+  .awi-explainer__why {
+    border-left: none;
+    border-top: 1px solid var(--hair-ink);
+    padding-left: 0;
+    padding-top: var(--s-7);
+  }
+}
+
+/* ── INDUSTRIES GRID ─────────────────────────────────────────── */
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: var(--s-8);
+}
+.industry-card {
+  border: 1px solid var(--hair-strong);
+  border-radius: var(--radius);
+  padding: 1.25rem 1rem;
+  text-align: center;
+  background: var(--paper-sunk);
+  transition: border-color 0.2s, background 0.2s;
+}
+.industry-card:hover {
+  border-color: var(--cta);
+  background: #fff;
+}
+.industry-card__label {
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+/* ── 3-COLUMN FEATURE GRID ───────────────────────────────────── */
+.feature-grid--three {
+  grid-template-columns: repeat(3, 1fr);
+  border: none;
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+.feature-grid--three .feature {
+  border: 1px solid var(--hair-strong);
+  border-radius: var(--radius);
+  padding: 2rem;
+  background: var(--paper-sunk);
+}
+.feature-grid--three .feature h4 {
+  margin-bottom: var(--s-5);
+}
+.feature-grid--three .feature .q {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .feature-grid--three {
+    grid-template-columns: 1fr;
+  }
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── TILES FEATURES GRID ─────────────────────────────────────── */
+.tiles-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: var(--s-10);
+}
+.tiles-feature-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.tiles-feature-item__icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  margin-top: .1rem;
+}
+.tiles-feature-item strong {
+  display: block;
+  font-weight: 700;
+  margin-bottom: .35rem;
+  color: var(--ink);
+}
+.tiles-feature-item p {
+  margin: 0;
+  font-size: .9rem;
+  color: var(--text-muted);
+}
+
+/* ── TILES PRICING GRID ──────────────────────────────────────── */
+.tiles-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: var(--s-10);
+  align-items: stretch;
+}
+.tiles-plan {
+  border: 1px solid var(--hair-strong);
+  border-radius: var(--radius);
+  padding: 2rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+  position: relative;
+}
+.tiles-plan--featured {
+  border-color: var(--cta);
+  box-shadow: 0 0 0 2px var(--cta);
+}
+.tiles-plan__badge {
+  position: absolute;
+  top: -0.65rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--cta);
+  color: #fff;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: .2rem .75rem;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+.tiles-plan__tier {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.tiles-plan__price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1;
+}
+.tiles-plan__price span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+.tiles-plan__desc {
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+.tiles-plan__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  flex: 1;
+}
+.tiles-plan__features li {
+  font-size: .85rem;
+  padding-left: 1.25rem;
+  position: relative;
+  color: var(--ink);
+}
+.tiles-plan__features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--cta);
+  font-weight: 700;
+}
+@media (max-width: 900px) {
+  .tiles-pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tiles-features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
