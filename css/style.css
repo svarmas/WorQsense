@@ -340,6 +340,7 @@ h5,h6 { font-family:var(--font-body); font-weight:600; font-feature-settings: 'c
   color: var(--accent);
 }
 .lead { font-size:clamp(1.1rem,1.6vw,1.3rem); line-height:1.6; color:var(--text-muted); }
+.hero .lead { color:rgba(245,244,240,.88); }
 
 /* --------------------------------------------------------------------------
    LAYOUT

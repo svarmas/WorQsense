@@ -67,7 +67,11 @@
         <h2 id="form-heading" style="margin-bottom:var(--s-2);">Send us a message</h2>
         <p style="color:var(--text-faint);font-size:.9rem;margin-bottom:var(--s-8);">We respond to all enquiries within one business day.</p>
 
-        <form class="contact-form" method="POST" action="#" novalidate aria-label="Contact form">
+        <form class="contact-form" method="POST" action="https://formspree.io/vidya@worqsense.com" aria-label="Contact form">
+          <!-- Formspree: on first submission Formspree will email vidya@worqsense.com to verify. Click confirm once — all subsequent submissions deliver automatically. -->
+          <input type="hidden" name="_subject" value="New WORQsense Enquiry">
+          <input type="hidden" name="_next" value="https://worqsense.com/contact.html">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
           <div class="form-grid-2">
             <div class="form-group">
               <label class="form-label" for="first-name">First name <span style="color:var(--red-600);" aria-label="required">*</span></label>
@@ -91,8 +95,10 @@
             <select class="form-select" id="role" name="role">
               <option value="" disabled selected>Select your role</option>
               <option value="chro">CHRO / Chief People Officer</option>
-              <option value="hrd">HR Director / Head of HR</option>
-              <option value="hm">Head of People &amp; Culture</option>
+              <option value="hrd">HR Director</option>
+              <option value="vphr">VP – HR / VP – People</option>
+              <option value="hoh">Head of HR</option>
+              <option value="hpc">Head of People &amp; Culture</option>
               <option value="ceo">CEO / Managing Director</option>
               <option value="gm">General Manager</option>
               <option value="legal">General Counsel / Legal</option>
@@ -133,7 +139,6 @@
             <p class="form-hint">This conversation is confidential. What you share here stays between us.</p>
           </div>
           <button type="submit" class="btn btn--solid btn--lg" style="width:100%;justify-content:center;">Send message</button>
-          <p style="font-size:.8rem;color:var(--text-faint);margin-top:var(--s-4);text-align:center;">We respond within one business day. Your information is kept confidential.</p>
         </form>
       </div>
 
@@ -145,12 +150,22 @@
         <div class="contact-aside">
           <div class="contact-detail">
             <span class="contact-detail__label">Email</span>
-            <a href="mailto:hello@worqsense.com">hello@worqsense.com</a>
-            <p style="font-size:.85rem;color:var(--text-faint);margin-top:.25rem;">General enquiries and new client conversations</p>
+            <a href="mailto:vidya@worqsense.com">vidya@worqsense.com</a>
+            <p style="font-size:.85rem;color:var(--text-faint);margin-top:.25rem;">Investigations, training &amp; confidential enquiries</p>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail__label">Email</span>
+            <a href="mailto:kavita@worqsense.com">kavita@worqsense.com</a>
+            <p style="font-size:.85rem;color:var(--text-faint);margin-top:.25rem;">ReWireWorks &amp; systems enquiries</p>
           </div>
           <div class="contact-detail">
             <span class="contact-detail__label">India</span>
             <a href="tel:+917736796809">+91 7736796809</a>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail__label">WhatsApp</span>
+            <a href="https://wa.me/917736796809" target="_blank" rel="noopener noreferrer">+91 7736796809</a>
+            <p style="font-size:.85rem;color:var(--text-faint);margin-top:.25rem;">India enquiries via WhatsApp</p>
           </div>
           <div class="contact-detail">
             <span class="contact-detail__label">New Zealand</span>
@@ -199,9 +214,7 @@
 <section class="section section--sunk" aria-labelledby="expect-heading">
   <div class="container">
     <div class="section-head" data-animate>
-      <span class="kicker">What to expect</span>
-      <h2 id="expect-heading">Simple. Deliberately.</h2>
-      <p>Every engagement starts with a real conversation, not a sales process.</p>
+      <h2 id="expect-heading">What happens next.</h2>
     </div>
     <div class="steps-h" data-animate>
       <div class="step-h">
