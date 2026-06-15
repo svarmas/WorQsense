@@ -556,7 +556,7 @@ h5,h6 { font-family:var(--font-body); font-weight:600; font-feature-settings: 'c
 .hero .hero-slide__heading {
   color:var(--on-ink);
   max-width:16ch;
-  font-size:var(--text-5xl);
+  font-size:clamp(2.9rem, 7vw, 5.6rem);
   font-weight:800;
   line-height:1.1;
   letter-spacing:-.02em;
