@@ -118,6 +118,23 @@
     });
   });
 
+  // ── Launch video poster overlay ───────────────────────────────────────────────
+  const videoPoster = document.getElementById('videoPoster');
+  const launchVideo = document.getElementById('launchVideo');
+  if (videoPoster && launchVideo) {
+    function dismissPoster() {
+      videoPoster.classList.add('is-hidden');
+      launchVideo.play();
+    }
+    videoPoster.addEventListener('click', dismissPoster);
+    videoPoster.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); dismissPoster(); }
+    });
+    launchVideo.addEventListener('ended', () => {
+      videoPoster.classList.remove('is-hidden');
+    });
+  }
+
   // ── Hero Carousel ─────────────────────────────────────────────────────────────
   const heroStage = document.getElementById('heroStage');
   if (heroStage) {

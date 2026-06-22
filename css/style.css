@@ -86,7 +86,7 @@
   --max-w:      1200px;
   --max-w-text: 760px;
   --pad-x:      clamp(1.25rem, 5vw, 3rem);
-  --section-y:  clamp(5.5rem, 11vw, 10rem);
+  --section-y:  clamp(4rem, 7vw, 7rem);
 
   /* ---- Legacy tokens ---- */
   --shadow-sm: 0 1px 3px rgba(26,26,26,0.07), 0 1px 2px rgba(26,26,26,0.05);
@@ -586,6 +586,7 @@ h5,h6 { font-family:var(--font-body); font-weight:600; font-feature-settings: 'c
 
 /* Legacy hero variants (for inner pages) */
 .hero--sm { padding-top:calc(100px + var(--s-6)); padding-bottom:var(--s-12); min-height:480px; display:flex; flex-direction:column; justify-content:flex-end; }
+.hero--sm + section { padding-top:clamp(2.5rem, 5vw, 4rem); }
 .hero--corridor {
   background-image:url('../abstractteal.jpg');
   background-size:cover; background-position:center;
@@ -1509,6 +1510,91 @@ body[data-hero="split"] .hero__label {
   }
   .tiles-features-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   VIDEO FEATURE — Launch film section (Homepage, between credentials and content)
+   ========================================================================== */
+.video-feature {
+  background: var(--ink);
+  padding: clamp(2.5rem, 4vw, 3.5rem) 0 clamp(3rem, 5vw, 5rem);
+}
+.video-feature__player {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 32px 100px rgba(0,0,0,0.55);
+  background: #000;
+}
+.video-feature__player video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  background: #000;
+}
+.video-poster {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink);
+  gap: var(--s-5);
+  cursor: pointer;
+  z-index: 2;
+  transition: opacity .35s ease;
+}
+.video-poster.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.video-poster__logo {
+  height: 88px;
+  width: auto;
+}
+.video-poster__tagline {
+  color: var(--on-ink-muted);
+  font-size: clamp(.85rem, 1.4vw, 1rem);
+  font-family: var(--font-body);
+  text-align: center;
+  max-width: 36ch;
+  margin: 0;
+  line-height: 1.5;
+}
+.video-poster__play {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(245,244,240,.3);
+  background: rgba(245,244,240,.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--s-3);
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+.video-poster:hover .video-poster__play {
+  background: rgba(245,244,240,.18);
+  border-color: rgba(245,244,240,.6);
+  transform: scale(1.07);
+}
+.video-poster__play svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--on-ink);
+  margin-left: 3px;
+}
+@media (max-width: 600px) {
+  .video-feature__player {
+    border-radius: 0;
+    margin-left: calc(-1 * var(--pad-x));
+    margin-right: calc(-1 * var(--pad-x));
+    max-width: none;
   }
 }
 
