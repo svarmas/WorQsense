@@ -97,7 +97,7 @@
   </div>
 </section>
 
-<!-- CREDENTIAL ROW ──────────────────────────────────────────────────────── -->
+<!-- CREDENTIALS STRIP ──────────────────────────────────────────────────── -->
 <div class="credentials-row" aria-label="Key credentials">
   <div class="credentials-row__item">
     <span class="credentials-row__label">AWI-CH</span>
@@ -120,7 +120,23 @@
   </div>
 </div>
 
-
+<!-- VIDEO FEATURE ───────────────────────────────────────────────────────── -->
+<section class="video-feature" aria-label="WORQsense launch film">
+  <div class="container">
+    <div class="video-feature__player" data-animate>
+      <div class="video-poster" id="videoPoster" role="button" tabindex="0" aria-label="Play WORQsense launch film" style="background-image:url('Video Cover Image.png');background-size:cover;background-position:center;">
+        <span class="video-poster__play" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><polygon points="6,3 20,12 6,21"/></svg>
+        </span>
+      </div>
+      <video controls preload="none" playsinline id="launchVideo" poster="Video Cover Image.png">
+        <source src="WORQsense%20Launch%20Video.mp4" type="video/mp4">
+        <track kind="captions" src="WORQsense-Launch-Video.vtt" srclang="en" label="English" default>
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+  </div>
+</section>
 
 
 <!-- 2 · WHAT WE PROVIDE ─────────────────────────────────────────────────── -->
@@ -227,7 +243,7 @@
       <div class="footer__col">
         <h5>Get in touch</h5>
         <ul>
-          <li><a href="mailto:hello@worqsense.com">hello@worqsense.com</a></li>
+          <li><a href="contact.html">Get in touch &rarr;</a></li>
           <li><a href="tel:+917736796809">India: +91 7736796809</a></li>
           <li><a href="tel:+64212287366">NZ: +64 212287366</a></li>
           <li><a href="https://linkedin.com/company/worqsense" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
