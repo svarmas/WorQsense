@@ -74,37 +74,7 @@
     });
   });
 
-  // ── Contact form ─────────────────────────────────────────────────────────────
-  const contactForm = document.querySelector('.contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const btn = contactForm.querySelector('[type="submit"]');
-      const orig = btn.textContent;
-      btn.textContent = 'Sending…';
-      btn.disabled = true;
-
-      /*
-       * Replace with your form endpoint, e.g. Formspree or Netlify Forms:
-       *
-       * const res = await fetch('https://formspree.io/f/YOUR_ID', {
-       *   method: 'POST',
-       *   body: new FormData(contactForm),
-       *   headers: { Accept: 'application/json' }
-       * });
-       * if (res.ok) { showSuccess(); } else { showError(); }
-       */
-
-      setTimeout(() => {
-        contactForm.innerHTML = `
-          <div style="text-align:center;padding:3rem 1rem;">
-            <div style="font-size:2.5rem;color:var(--cta);margin-bottom:1rem;">&#10003;</div>
-            <h3 style="color:var(--text);margin-bottom:0.5rem;">Message received.</h3>
-            <p style="color:var(--text-muted);">We'll be in touch within one business day.</p>
-          </div>`;
-      }, 900);
-    });
-  }
+  // ── Contact form — handled natively by HTML form POST to Formspree ──────────
 
   // ── Newsletter form ───────────────────────────────────────────────────────────
   document.querySelectorAll('.newsletter-form').forEach(form => {
