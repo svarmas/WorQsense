@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="index, follow">
   <title>Resources | WORQsense</title>
   <meta name="description" content="Practical resources on workplace investigations, PoSH compliance, Internal Committee obligations, psychosocial safety, and evidence-based interviewing. From WORQsense.">
   <meta name="keywords" content="PoSH Act resources India, workplace investigation guide, Internal Committee training, psychosocial safety resources, AWI-CH, IMS PEACE model, ERA New Zealand">
@@ -19,7 +19,12 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EB944H1X98"></script>
-  <script src="js/gtag.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EB944H1X98');
+  </script>
 </head>
 <body>
 
@@ -34,6 +39,7 @@
       <li><a href="investigations.html" class="nav__link" data-page="investigations">Investigation</a></li>
       <li><a href="rewireworks.html" class="nav__link" data-page="diagnostics">Prevention</a></li>
       
+      <li><a href="resources.html" class="nav__link active" data-page="resources">Resources</a></li>
       <li><a href="about.html" class="nav__link" data-page="about">About</a></li>
       <li><a href="contact.html" class="nav__link" data-page="contact">Contact</a></li>
       <li class="nav__cta-mobile"><a href="contact.html" class="btn btn--solid">Talk to us</a></li>
@@ -54,34 +60,10 @@
   </div>
 </section>
 
-<!-- BOARD-READY RESOURCES ──────────────────────────────────────────────── -->
-<section class="section" aria-labelledby="board-resources-heading">
-  <div class="container">
-    <div class="section-head" data-animate>
-      <span class="kicker">Board-ready</span>
-      <h2 id="board-resources-heading">For boards and senior leadership.</h2>
-      <p>Governance-level resources on investigation oversight, liability exposure, and what defensible process means at the board and audit committee level.</p>
-    </div>
-    <div style="margin-top:var(--s-8);max-width:52rem;">
-      <article class="card" style="display:flex;align-items:flex-start;gap:var(--s-6);">
-        <div style="flex-shrink:0;width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center;background:var(--paper-sunk);border-radius:4px;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--ink-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-        </div>
-        <div class="card__body" style="padding:0;">
-          <span class="kicker">Self-assessment &middot; PDF</span>
-          <h3 class="card__title" style="margin-top:var(--s-2);">WORQsense Defensibility Audit: Board Edition</h3>
-          <p style="margin-top:var(--s-3);">A governance-level audit for boards and audit committees. Use it to assess whether your organisation's investigation process would withstand scrutiny - before it faces it.</p>
-          <a href="worqsense-defensibility-audit-board.pdf" class="btn btn--solid" style="margin-top:var(--s-5);display:inline-flex;" target="_blank" rel="noopener">Download PDF</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
 <!-- HR PRACTITIONERS ───────────────────────────────────────────────────── -->
-<section class="section section--sunk" aria-labelledby="hr-resources-heading">
+<section class="section" aria-labelledby="hr-resources-heading">
   <div class="container">
-    <div class="section-head" data-animate>
+    <div class="section-head">
       <span class="kicker">HR Practitioners &amp; People Professionals</span>
       <h2 id="hr-resources-heading">For the people running the process.</h2>
       <p>Practical reference material on investigation standards, Internal Committee obligations, interview methodology, and defensible reporting.</p>
@@ -102,15 +84,33 @@
   </div>
 </section>
 
+<!-- BOARD SECTION HIDDEN — restore when ready
+<section class="section section--sunk" aria-labelledby="board-resources-heading">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Board-ready</span>
+      <h2 id="board-resources-heading">For boards and senior leadership.</h2>
+      <p>Governance-level resources on investigation oversight, liability exposure, and what defensible process means at the board and audit committee level.</p>
+    </div>
+    <div style="margin-top:var(--s-8);max-width:52rem;">
+      <div style="padding:var(--s-8) var(--s-6);border:1px dashed var(--hair);border-radius:6px;text-align:center;">
+        <p style="color:var(--ink-3);font-size:.95rem;">Resources in preparation. Check back soon.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+-->
+
 <!-- CTA ──────────────────────────────────────────────────────────────────── -->
-<section class="section section--dark" aria-labelledby="resources-cta-heading">
+<section class="section section--ink" aria-labelledby="resources-cta-heading">
   <div class="container" style="text-align:center;max-width:52ch;">
     <span class="kicker" style="color:var(--cta);">Get in touch</span>
-    <h2 id="resources-cta-heading" style="color:var(--paper);">A question not answered here?</h2>
-    <p style="color:var(--paper);opacity:.85;margin-top:var(--s-4);">We work with organisations at every stage: before a complaint is filed, during an active inquiry, and after an investigation closes. If you have a question about process, compliance, or capability, talk to us.</p>
+    <h2 id="resources-cta-heading" style="color:var(--on-ink);">A question not answered here?</h2>
+    <p style="color:var(--on-ink-muted);margin-top:var(--s-4);">We work with organisations at every stage: before a complaint is filed, during an active inquiry, and after an investigation closes. If you have a question about process, compliance, or capability, talk to us.</p>
     <div class="btn-group" style="justify-content:center;margin-top:var(--s-8);">
       <a href="contact.html" class="btn btn--solid">Talk to us</a>
-      <a href="investigations.html" class="btn btn--line" style="border-color:var(--paper);color:var(--paper);">Our approach</a>
+      <a href="investigations.html" class="btn btn--line">Our approach</a>
     </div>
   </div>
 </section>
