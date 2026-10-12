@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="noindex, nofollow">
   <title>Events &amp; Learning | WORQsense</title>
   <meta name="description" content="WORQsense events, workshops, and roundtables for HR leaders and people professionals. Practical learning on workplace culture, conflict, organisational design, and sensemaking.">
   <meta name="keywords" content="WORQsense events, HR workshops, workplace culture training, CHRO roundtable, people leader learning, India HR events">
@@ -37,9 +37,9 @@
       {
         "@type": "Event",
         "position": 2,
-        "name": "HR Leaders Roundtable: Delhi",
+        "name": "HR Leaders Roundtable: Thiruvananthapuram",
         "startDate": "2026-08-07",
-        "location": {"@type": "Place", "name": "Delhi, India"},
+        "location": {"@type": "Place", "name": "Thiruvananthapuram, India"},
         "organizer": {"@type": "Organization", "name": "WORQsense"}
       }
     ]
@@ -57,34 +57,23 @@
 <body>
 
   <!-- ── NAVIGATION ──────────────────────────────────────────────────────────── -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo" aria-label="WORQsense, home">
-        <img src="assets/logo.png" alt="WORQsense" height="56">
-      </a>
-            <ul class="nav__links" id="nav-links" role="list">
-        <li><a href="index.html" class="nav__link">Home</a></li>
-        <li><a href="investigations.html" class="nav__link">Investigations</a></li>
-        <li class="nav__item nav__item--has-dropdown">
-          <a href="skill-building.html" class="nav__link nav__link--has-dropdown">Training</a>
-          <ul class="nav__dropdown" role="list">
-            <li><a href="ims-partnership.html">Investigative Interviewing</a></li>
-            <li><a href="tiles.html">TILES System&reg;</a></li>
-            <li><a href="skill-building.html">Training Suite</a></li>
-          </ul>
-        </li>
-        <li><a href="rewireworks.html" class="nav__link">Diagnostics &amp; Prevention</a></li>
-        <li><a href="about.html" class="nav__link">About</a></li>
-        <li><a href="contact.html" class="nav__link">Contact</a></li>
-      </ul>
-      <div class="nav__actions">
-        <a href="contact.html" class="btn btn--solid">Talk to us</a>
-      </div>
-      <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  <nav class="nav" id="nav" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="WORQsense, home">
+      <img src="assets/logo.png" alt="WORQsense">
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html" class="nav__link" data-page="home">Home</a></li>
+      <li><a href="investigations.html" class="nav__link" data-page="investigations">Investigation</a></li>
+      <li><a href="skill-building.html" class="nav__link" data-page="training">Training</a></li>
+      <li><a href="about.html" class="nav__link active" data-page="about">About</a></li>
+      <li><a href="contact.html" class="nav__link" data-page="contact">Contact</a></li>
+      <li class="nav__cta-mobile"><a href="contact.html" class="btn btn--solid">Speak with an investigator</a></li>
+    </ul>
+    <div class="nav__actions"><a href="contact.html" class="btn btn--solid">Speak with an investigator</a></div>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
 
   <main id="main-content">
 
@@ -131,9 +120,9 @@
               <div class="event-card__month">Aug</div>
             </div>
             <div class="event-card__body">
-              <h3><a href="contact.html">HR Leaders Roundtable: Delhi</a></h3>
+              <h3><a href="contact.html">HR Leaders Roundtable: Thiruvananthapuram</a></h3>
               <div class="event-card__meta">
-                <span>📍 Delhi, India</span>
+                <span>📍 Thiruvananthapuram, India</span>
                 <span>🕘 6:30 PM – 9:00 PM IST</span>
                 <span class="post-card__tag">Roundtable · Invite only</span>
               </div>
@@ -165,13 +154,13 @@
               <div class="event-card__month">Oct</div>
             </div>
             <div class="event-card__body">
-              <h3><a href="contact.html">CHRO Breakfast: Delhi</a></h3>
+              <h3><a href="contact.html">CHRO Breakfast: Thiruvananthapuram</a></h3>
               <div class="event-card__meta">
-                <span>📍 Delhi, India</span>
+                <span>📍 Thiruvananthapuram, India</span>
                 <span>🕘 7:30 AM – 9:30 AM IST</span>
                 <span class="post-card__tag">Breakfast · Invite only</span>
               </div>
-              <p style="font-size:var(--text-sm); color:var(--grey-400); margin-top:var(--s-3);">A focused breakfast conversation for CHROs in the Delhi NCR technology sector. We'll share the early findings from our 2026 India Workplace Conditions Report and discuss the implications for people strategy in high-growth organisations.</p>
+              <p style="font-size:var(--text-sm); color:var(--grey-400); margin-top:var(--s-3);">A focused breakfast conversation for CHROs in the Thiruvananthapuram NCR technology sector. We'll share the early findings from our 2026 India Workplace Conditions Report and discuss the implications for people strategy in high-growth organisations.</p>
               <a href="contact.html" class="btn btn--outline" style="margin-top:var(--s-4); padding:0.5rem 1rem; font-size:var(--text-sm);">Register Interest</a>
             </div>
           </article>
@@ -231,7 +220,7 @@
             <div class="post-card__body">
               <div class="post-card__meta">
                 <span class="post-card__tag">Roundtable</span>
-                <span>February 2026 · Delhi</span>
+                <span>February 2026 · Thiruvananthapuram</span>
               </div>
               <h3><a href="#">CHRO Roundtable: Beyond Engagement Scores</a></h3>
               <p>An invite-only dinner conversation for 8 CHROs on the limitations of standard culture measurement and what to do instead.</p>
@@ -294,14 +283,14 @@
             <img src="assets/logo.png" alt="WORQsense logo" height="36">
           </a>
           <p class="footer__tagline">Workplaces have matured. Investigations must too.</p>
-          <p>Train to a Standard · Investigate to Withstand · Prevent by Design Independent workplace investigations led by an AWI Certificate Holder (AWI-CH), in partnership with Interview Management Solutions (IMS, Australia). Serving India and New Zealand.</p>
+          <p>Building Investigative Capability · Delivering Defensible Outcomes</p>
         </div>
         <div class="footer__col">
           <h4>Services</h4>
           <ul>
             <li><a href="investigations.html">Investigations</a></li>
             <li><a href="skill-building.html">Skill Building</a></li>
-            <li><a href="rewireworks.html">Diagnostics &amp; Prevention</a></li>
+            
           </ul>
         </div>
         <div class="footer__col">
@@ -323,7 +312,7 @@
       </div>
       <div class="footer__bottom">
         <p class="footer__copy">&copy; 2026 WORQsense. All rights reserved.</p>
-        <p class="footer__lp">Formerly Lex Peritias · worqsense.com</p>
+        <p class="footer__lp"> worqsense.com</p>
       </div>
     </div>
   </footer>
