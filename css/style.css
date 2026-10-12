@@ -3,16 +3,16 @@
    Premium editorial re-tone: Inter · Teal-900 darks · hairline rules
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 
 /* --------------------------------------------------------------------------
    TOKENS
    -------------------------------------------------------------------------- */
 :root {
   /* ---- Original Colours Palette (locked) ---- */
-  --paper:        #EDEAE4;
-  --paper-card:   #F5F4F0;
-  --paper-sunk:   #E1DED7;
+  --paper:        #F8F6F2;
+  --paper-card:   #FDFCFA;
+  --paper-sunk:   #EDE9E3;
   --ink:          #0D3B44;
   --ink-2:        #1A6876;
   --on-ink:       #F5F4F0;
@@ -30,6 +30,7 @@
   --cta-deep:     #156F7F;
   --on-cta:       #FFFFFF;
   --spark:        #1B8FA0;
+  --gold:         #B89250;
 
   /* ---- Legacy colour tokens (compatibility with inner pages) ---- */
   --teal-100: #E0F7FA;
@@ -68,7 +69,7 @@
 
   /* ---- Fonts ---- */
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-head: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-head: 'Source Serif 4', Georgia, serif;
   --font:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
   /* ---- Corners (2px = near-square, intentional) ---- */
@@ -183,8 +184,8 @@ body[data-hero="stacked"] .hero__meta-item:last-child { border-right:none; }
 
 /* ── Credential row (below hero) ────────────────────────────────────────── */
 .credentials-row {
-  background: var(--paper-sunk);
-  border-bottom: 1px solid var(--hair-strong);
+  background: #ffffff;
+  border-bottom: 1px solid var(--hair);
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -194,34 +195,33 @@ body[data-hero="stacked"] .hero__meta-item:last-child { border-right:none; }
   display: flex;
   flex-direction: column;
   gap: .3rem;
-  padding: 1.1rem clamp(1.5rem, 4vw, 3.5rem);
+  padding: 1.25rem clamp(1.5rem, 4vw, 3.5rem);
   text-align: center;
   min-width: 200px;
   flex: 1;
+  border-left: 3px solid var(--accent);
+  margin: .75rem clamp(.75rem, 2vw, 1.5rem);
+  border-radius: 2px;
 }
 .credentials-row__label {
-  font-size: .65rem;
+  font-size: .7rem;
   font-weight: 700;
-  letter-spacing: .12em;
+  letter-spacing: .10em;
   text-transform: uppercase;
-  color: var(--text-faint);
+  color: var(--accent);
 }
 .credentials-row__value {
-  font-size: .8rem;
-  font-weight: 600;
+  font-size: .82rem;
+  font-weight: 500;
   color: var(--ink);
   letter-spacing: .01em;
 }
 .credentials-row__divider {
-  width: 1px;
-  background: var(--hair-strong);
-  margin-block: .75rem;
-  flex-shrink: 0;
+  display: none;
 }
 @media (max-width: 640px) {
   .credentials-row { flex-direction: column; }
-  .credentials-row__divider { width: auto; height: 1px; margin: 0 1.5rem; }
-  .credentials-row__item { padding: .9rem 1.5rem; }
+  .credentials-row__item { margin: .5rem 1rem; }
 }
 
 /* ── Client logo strip ─────────────────────────────────────────────────── */
@@ -331,6 +331,9 @@ h4 { font-family:var(--font-body); font-size:1.0625rem; font-weight:700; line-he
 h5,h6 { font-family:var(--font-body); font-weight:600; font-feature-settings: 'cv02','cv03','cv04','cv11'; }
 
 .kicker {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  padding: .2rem .6rem;
+  border-radius: 3px;
   display: inline-block;
   font-family: var(--font-body);
   font-size: .72rem;
@@ -349,13 +352,16 @@ h5,h6 { font-family:var(--font-body); font-weight:600; font-feature-settings: 'c
 .container--narrow { max-width:var(--max-w-text); margin-inline:auto; padding-inline:var(--pad-x); }
 .section { padding-block:var(--section-y); }
 .section--sm { padding-block:clamp(2.5rem, 5vw, 4.5rem); }
-.section--paper { background:var(--paper); }
+.section--paper { background:#F8F6F2; }
 .section--sunk  { background:var(--paper-sunk); }
 .section--ink   { background-color:var(--ink); color:var(--on-ink); }
 .section--ink h1,.section--ink h2,.section--ink h3,.section--ink h4 { color:var(--on-ink); }
 
 .section-head { max-width:760px; margin-bottom:clamp(1.5rem,2.5vw,2.25rem); }
-.section-head .kicker { margin-bottom:var(--s-5); }
+.section-head .kicker {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  padding: .2rem .6rem;
+  border-radius: 3px; margin-bottom:var(--s-5); }
 .section-head h2 { margin-bottom:var(--s-5); }
 .section-head p { color:var(--text-muted); font-size:1.15rem; max-width:620px; }
 .section--ink .section-head p { color:var(--on-ink-muted); }
@@ -464,6 +470,25 @@ h5,h6 { font-family:var(--font-body); font-weight:600; font-feature-settings: 'c
   transition:border-color .25s ease, background .25s ease;
 }
 .nav.is-scrolled { border-bottom-color:var(--hair); }
+
+/* Nav goes dark-transparent on ALL pages with a hero section */
+body:has(.hero) .nav:not(.is-scrolled) {
+  background: color-mix(in srgb, var(--ink) 55%, transparent);
+  backdrop-filter: blur(14px);
+}
+body:has(.hero) .nav:not(.is-scrolled) .nav__link {
+  color: rgba(245,244,240,.75);
+}
+body:has(.hero) .nav:not(.is-scrolled) .nav__link:hover,
+body:has(.hero) .nav:not(.is-scrolled) .nav__link.active {
+  color: #fff;
+}
+body:has(.hero) .nav:not(.is-scrolled) .nav__link.active::after {
+  background: rgba(245,244,240,.70);
+}
+body:has(.hero) .nav:not(.is-scrolled) .nav__logo img {
+  filter: brightness(0) invert(1) drop-shadow(0 0 6px rgba(27,143,160,.5));
+}
 .nav__inner {
   max-width:var(--max-w); margin-inline:auto; padding-inline:var(--pad-x);
   height:112px; display:flex; align-items:center; justify-content:space-between; gap:var(--s-6);
@@ -534,10 +559,11 @@ h5,h6 { font-family:var(--font-body); font-weight:600; font-feature-settings: 'c
   content:'';
   position:absolute; inset:0;
   background-image:
-    linear-gradient(rgba(245,244,240,0.20), rgba(13,59,68,0.70)),
+    radial-gradient(ellipse at 8% 20%, rgba(27,143,160,0.45) 0%, transparent 52%),
+    linear-gradient(rgba(13,59,68,0.22), rgba(13,59,68,0.78)),
     url('../abstractteal.jpg');
-  background-size:cover;
-  background-position:center;
+  background-size:auto, cover, cover;
+  background-position:center, center, center;
   transform:scaleX(-1);
   z-index:0;
 }
@@ -634,7 +660,10 @@ h5,h6 { font-family:var(--font-body); font-weight:600; font-feature-settings: 'c
    -------------------------------------------------------------------------- */
 .partner-strip { background:var(--paper); border-bottom:1px solid var(--hair); padding-block:clamp(1.75rem,3vw,2.5rem); }
 .partner-strip__inner { display:flex; align-items:center; gap:clamp(1.5rem,4vw,3rem); flex-wrap:wrap; }
-.partner-strip .kicker { color:var(--text-faint); white-space:nowrap; }
+.partner-strip .kicker {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  padding: .2rem .6rem;
+  border-radius: 3px; color:var(--text-faint); white-space:nowrap; }
 .partner-strip__logo { height:46px; width:auto; flex-shrink:0; }
 .partner-strip__copy { flex:1 1 320px; font-size:.95rem; color:var(--text-muted); max-width:56ch; }
 .partner-strip__link { white-space:nowrap; }
@@ -663,10 +692,16 @@ h5,h6 { font-family:var(--font-body); font-weight:600; font-feature-settings: 'c
 .notes { display:flex; flex-direction:column; }
 .note { padding:var(--s-8) 0; border-top:1px solid var(--hair); }
 .note:first-child { border-top:none; padding-top:0; }
-.note .kicker { color:var(--text-faint); margin-bottom:var(--s-3); display:block; }
+.note .kicker {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  padding: .2rem .6rem;
+  border-radius: 3px; color:var(--text-faint); margin-bottom:var(--s-3); display:block; }
 .note h4 { margin-bottom:var(--s-2); }
 .note p { color:var(--text-muted); font-size:.98rem; }
-.note--flag .kicker { color:#A8472F; }
+.note--flag .kicker {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  padding: .2rem .6rem;
+  border-radius: 3px; color:#A8472F; }
 
 /* --------------------------------------------------------------------------
    TWO LENSES
@@ -718,6 +753,13 @@ h5,h6 { font-family:var(--font-body); font-weight:600; font-feature-settings: 'c
 .feature {
   padding:clamp(2rem,3vw,2.75rem) clamp(1.5rem,2.5vw,2.5rem);
   border-top:1px solid var(--hair); border-left:1px solid var(--hair);
+  background:#ffffff;
+  box-shadow:0 2px 12px rgba(13,59,68,.06);
+  border-radius:4px;
+  transition:box-shadow .2s ease;
+}
+.feature:hover {
+  box-shadow:0 6px 24px rgba(13,59,68,.11);
 }
 .feature h4 { margin-bottom:var(--s-3); color:var(--text); }
 .feature h4 .q { color:var(--accent); }
@@ -785,7 +827,7 @@ h5,h6 { font-family:var(--font-body); font-weight:600; font-feature-settings: 'c
    -------------------------------------------------------------------------- */
 .footer { background:var(--ink); color:var(--on-ink); padding-block:clamp(3.5rem,6vw,5rem) var(--s-10); }
 .footer__grid { display:grid; grid-template-columns:2fr 1fr 1fr 1.2fr; gap:var(--s-12) var(--s-8); }
-.footer__brand img { height:68px; width:auto; margin-bottom:var(--s-5); }
+.footer__brand img { height:68px; width:auto; margin-bottom:var(--s-5); filter:brightness(0) invert(1); }
 .footer__logo { display:flex; align-items:center; gap:var(--s-3); text-decoration:none; margin-bottom:var(--s-4); }
 .footer__logo img { height:68px; width:auto; }
 .footer__tag, .footer__tagline { font-family:var(--font-head); font-size:1.05rem; color:var(--on-ink); margin-bottom:var(--s-4); max-width:30ch; }
