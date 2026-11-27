@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resources | WORQsense</title>
-  <meta name="description" content="Free PoSH tools from WORQsense: the PoSH Defensibility Audit and a PoSH Investigation Timeline quick-reference guide for HR, ER and Internal Committee professionals.">
+  <meta name="description" content="Free PoSH tools from WORQsense: a PoSH Investigation Timeline quick-reference guide for HR, ER and Internal Committee professionals.">
   <meta name="keywords" content="PoSH Act resources India, workplace investigation guide, Internal Committee training, psychosocial safety resources, AWI-CH, IMS PEACE model, ERA New Zealand">
   <link rel="canonical" href="https://worqsense.com/resources.html">
   <meta property="og:type" content="website">
@@ -68,21 +68,8 @@
       <p>Your Internal Committee&rsquo;s annual report goes to the employer and the District Officer, and with the NCW now recommending annual PoSH audits, the case files behind those numbers will be read. Check them now, while there&rsquo;s still time to fix what you find.</p>
     </div>
 
-    <div class="res-grid">
-      <!-- Gated: Defensibility Audit -->
-      <article class="card res-card res-card--feature">
-        <span class="kicker">Self-assessment &middot; PDF &middot; Free with sign-up</span>
-        <h3 class="card__title" style="margin-top:var(--s-2);">PoSH Defensibility Audit: Practitioner Edition</h3>
-        <p class="res-card__q">Would your most recent case file hold up under scrutiny?</p>
-        <p>Ten questions to check your complaint handling, documentation and case management against the standards courts, tribunals and regulators now apply. It tests whether a case file can be defended, not just whether compliance boxes were ticked, and shows you where the vulnerabilities are.</p>
-        <p class="res-card__label">Who it&rsquo;s for</p>
-        <ul class="res-tags">
-          <li>HR professionals</li><li>Employee Relations teams</li><li>Internal Committee members</li><li>Workplace investigators</li><li>Compliance leaders</li>
-        </ul>
-        <button type="button" class="btn btn--solid js-audit-gate" data-edition="practitioner" style="margin-top:var(--s-6);display:inline-flex;">Get the audit</button>
-        <p class="res-card__fine">Share your name, email and phone, and the PDF downloads straight away.</p>
-      </article>
-
+    <div class="res-grid res-grid--single">
+      <!-- AUDIT HIDDEN: audit card removed for now. Restore from Blog/_restore/resources-with-audit.html -->
       <!-- Ungated: Timeline -->
       <article class="card res-card">
         <span class="kicker">Quick reference &middot; PDF</span>
@@ -102,22 +89,22 @@
     <div class="section-head">
       <span class="kicker">Need more than a checklist?</span>
       <h2 id="review-heading">A checklist identifies gaps. Closing them takes capability.</h2>
-      <p>Many organisations discover through the audit that a process was completed, but not documented or managed in a way that would withstand scrutiny. That&rsquo;s where a conversation helps.</p>
+      <p>Many organisations discover, only when a matter is challenged, that a process was completed but not documented or managed in a way that would withstand scrutiny. A conversation before that point helps.</p>
     </div>
 
     <div class="review">
       <div>
         <h3>Complimentary 20&#8209;minute Defensibility Review</h3>
         <ol class="review__steps">
-          <li><span>1</span>Download the audit.</li>
-          <li><span>2</span>Score your most recent case file.</li>
-          <li><span>3</span>If you score 8 or below, book a complimentary review with an investigator.</li>
+          <li><span>1</span>Pull your most recent case file.</li>
+          <li><span>2</span>Check it against the PoSH Investigation Timeline.</li>
+          <li><span>3</span>Unsure it would hold up? Book a complimentary review with an investigator.</li>
         </ol>
       </div>
       <div class="review__panel">
         <p class="res-card__label" style="margin-top:0;">In the session, we&rsquo;ll help you</p>
         <ul class="review__list">
-          <li>Understand the risks behind your score</li>
+          <li>Understand where your process is exposed</li>
           <li>Identify specific procedural vulnerabilities</li>
           <li>Prioritise corrective actions</li>
           <li>Decide whether training or further support is needed</li>
@@ -165,7 +152,7 @@
       <article class="rl-card">
         <span class="rl-meta">Edition 2 &middot; July 28, 2026</span>
         <h3><a href="resolution-lab/ten-questions-your-posh-audit-wont-ask.html">Ten questions your PoSH audit won&rsquo;t ask</a></h3>
-        <p>If your last inquiry were challenged in court tomorrow, would the case file survive? The essay behind the Defensibility Audit.</p>
+        <p>If your last inquiry were challenged in court tomorrow, would the case file survive? What a PoSH audit must test beyond the artefacts.</p>
         <a class="card__link" href="resolution-lab/ten-questions-your-posh-audit-wont-ask.html">Read</a>
       </article>
       <article class="rl-card">
@@ -195,6 +182,7 @@
 </section>
 
 <style>
+.res-grid--single{grid-template-columns:minmax(0,40rem)!important;}
 .res-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:var(--s-6);margin-top:var(--s-8);align-items:start;}
 @media (max-width:860px){.res-grid{grid-template-columns:1fr;}}
 .res-card{padding:var(--s-8) var(--s-6);}
