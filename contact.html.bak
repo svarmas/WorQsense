@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>Contact WORQsense | Workplace Investigation Enquiries</title>
+  <meta name="description" content="Start a conversation with WORQsense. No pitch, no pressure. Tell us what's happening in your organisation and we'll tell you honestly whether and how we can help. We respond within one business day.">
+  <meta name="keywords" content="contact workplace investigator India, hire workplace investigator, PoSH investigation enquiry, IC member inquiry India">
+  <link rel="canonical" href="https://worqsense.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://worqsense.com/contact.html">
+  <meta property="og:title" content="Talk Confidentially | WORQsense">
+  <meta property="og:description" content="No pitch, no pressure. Tell us what's happening and we'll tell you honestly whether we can help.">
+  <meta property="og:image" content="https://worqsense.com/assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EB944H1X98"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EB944H1X98');
+  </script>
+</head>
+<body>
+
+<nav class="nav" id="nav" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="WORQsense, home">
+      <img src="assets/logo.png" alt="WORQsense">
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html" class="nav__link" data-page="home">Home</a></li>
+      <li><a href="investigations.html" class="nav__link" data-page="investigations">Investigation</a></li>
+      <li><a href="skill-building.html" class="nav__link" data-page="training">Training</a></li>
+      <li><a href="about.html" class="nav__link" data-page="about">About</a></li>
+      <li><a href="contact.html" class="nav__link active" data-page="contact">Contact</a></li>
+      <li class="nav__cta-mobile"><a href="contact.html" class="btn btn--solid">Discuss your situation</a></li>
+    </ul>
+    <div class="nav__actions"><a href="contact.html" class="btn btn--solid">Discuss your situation</a></div>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<!-- HERO ─────────────────────────────────────────────────────────────────── -->
+<section class="hero hero--sm" aria-labelledby="contact-hero-heading" style="background-image: linear-gradient(rgba(245,244,240,0.20), rgba(13,59,68,0.70)), url('3dcubes.jpg'); background-size:cover; background-position:center;">
+  <div class="hero__inner">
+    <span class="kicker hero__label">Contact</span>
+    <h1 id="contact-hero-heading">Talk confidentially.</h1>
+    <p class="hero-slide__sub" style="margin-top:var(--s-6);max-width:48ch;">No pitch, no pressure. Tell us what's happening and we'll tell you honestly whether and how we can help. We respond within one business day.</p>
+  </div>
+</section>
+
+<!-- FORM + DETAILS ───────────────────────────────────────────────────────── -->
+<section class="section" style="background:#fff;" id="intake" aria-labelledby="form-heading">
+  <div class="container">
+    <div class="contact-layout" data-animate>
+
+      <!-- Form -->
+      <div>
+        <h2 id="form-heading" style="margin-bottom:var(--s-2);">Discuss your situation</h2>
+        <p style="color:var(--text-faint);font-size:.9rem;margin-bottom:var(--s-8);">All enquiries are treated as confidential. We respond within one business day.</p>
+
+        <form class="contact-form" method="POST" action="https://formsubmit.co/contact@worqsense.com" aria-label="Contact form">
+          <input type="hidden" name="_subject" value="New WORQsense Enquiry">
+          <input type="hidden" name="_next" value="https://worqsense.com/contact.html">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-group">
+            <label class="form-label">What can we help with? <span style="color:var(--red-600);" aria-label="required">*</span></label>
+            <div style="display:flex;flex-direction:column;gap:var(--s-3);margin-top:var(--s-3);">
+              <label style="display:flex;align-items:center;gap:var(--s-3);cursor:pointer;font-size:.95rem;color:var(--text);">
+                <input type="radio" name="enquiry_type" value="Independent Investigation" required style="accent-color:var(--accent);width:16px;height:16px;flex-shrink:0;">
+                Independent Investigation
+              </label>
+              <label style="display:flex;align-items:center;gap:var(--s-3);cursor:pointer;font-size:.95rem;color:var(--text);">
+                <input type="radio" name="enquiry_type" value="Investigation Review" style="accent-color:var(--accent);width:16px;height:16px;flex-shrink:0;">
+                Investigation Review
+              </label>
+              <label style="display:flex;align-items:center;gap:var(--s-3);cursor:pointer;font-size:.95rem;color:var(--text);">
+                <input type="radio" name="enquiry_type" value="IC / GRC Training" style="accent-color:var(--accent);width:16px;height:16px;flex-shrink:0;">
+                IC / GRC Training
+              </label>
+              <label style="display:flex;align-items:center;gap:var(--s-3);cursor:pointer;font-size:.95rem;color:var(--text);">
+                <input type="radio" name="enquiry_type" value="HR Capability Building" style="accent-color:var(--accent);width:16px;height:16px;flex-shrink:0;">
+                HR Capability Building
+              </label>
+              <label style="display:flex;align-items:center;gap:var(--s-3);cursor:pointer;font-size:.95rem;color:var(--text);">
+                <input type="radio" name="enquiry_type" value="Audit Interviewing Training" style="accent-color:var(--accent);width:16px;height:16px;flex-shrink:0;">
+                Audit Interviewing Training
+              </label>
+              <label style="display:flex;align-items:center;gap:var(--s-3);cursor:pointer;font-size:.95rem;color:var(--text);">
+                <input type="radio" name="enquiry_type" value="Other" style="accent-color:var(--accent);width:16px;height:16px;flex-shrink:0;">
+                Other
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top:var(--s-7);">
+            <label class="form-label">Organisation size</label>
+            <div style="display:flex;flex-direction:column;gap:var(--s-3);margin-top:var(--s-3);">
+              <label style="display:flex;align-items:center;gap:var(--s-3);cursor:pointer;font-size:.95rem;color:var(--text);">
+                <input type="radio" name="org_size" value="Under 500" style="accent-color:var(--accent);width:16px;height:16px;flex-shrink:0;">
+                Under 500 employees
+              </label>
+              <label style="display:flex;align-items:center;gap:var(--s-3);cursor:pointer;font-size:.95rem;color:var(--text);">
+                <input type="radio" name="org_size" value="500-2000" style="accent-color:var(--accent);width:16px;height:16px;flex-shrink:0;">
+                500 &ndash; 2,000
+              </label>
+              <label style="display:flex;align-items:center;gap:var(--s-3);cursor:pointer;font-size:.95rem;color:var(--text);">
+                <input type="radio" name="org_size" value="2000-10000" style="accent-color:var(--accent);width:16px;height:16px;flex-shrink:0;">
+                2,000 &ndash; 10,000
+              </label>
+              <label style="display:flex;align-items:center;gap:var(--s-3);cursor:pointer;font-size:.95rem;color:var(--text);">
+                <input type="radio" name="org_size" value="10000+" style="accent-color:var(--accent);width:16px;height:16px;flex-shrink:0;">
+                10,000+
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top:var(--s-7);">
+            <label class="form-label" for="name">Name <span style="color:var(--red-600);" aria-label="required">*</span></label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email <span style="color:var(--red-600);" aria-label="required">*</span></label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="you@company.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="organisation">Organisation</label>
+            <input class="form-input" type="text" id="organisation" name="organisation" placeholder="Your organisation's name" autocomplete="organization">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Tell us about your situation <span style="color:var(--red-600);" aria-label="required">*</span></label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="There is no right way to describe this. Tell us what you are dealing with and what you are hoping to achieve." required rows="6"></textarea>
+            <p class="form-hint">This conversation is confidential. What you share here stays between us.</p>
+          </div>
+          <button type="submit" class="btn btn--solid btn--lg" style="width:100%;justify-content:center;">Send enquiry</button>
+          <p style="margin-top:var(--s-4);font-size:.82rem;color:var(--ink-3);text-align:center;">By submitting this form you agree to WORQsense contacting you in response to your enquiry. See our <a href="privacy.html" style="color:var(--ink-3);text-decoration:underline;">Privacy Policy</a>.</p>
+        </form>
+      </div>
+
+      <!-- Contact details -->
+      <aside data-animate data-delay="2">
+        <h2 style="margin-bottom:var(--s-2);font-size:1.4rem;">Other ways to reach us</h2>
+        <p style="color:var(--text-faint);font-size:.9rem;margin-bottom:var(--s-8);">We're available across both markets.</p>
+
+        <div class="contact-aside">
+          <div class="contact-detail">
+            <span class="contact-detail__label">Email</span>
+            <a href="mailto:contact@worqsense.com">contact@worqsense.com</a>
+            <p style="font-size:.85rem;color:var(--text-faint);margin-top:.25rem;">Investigations, training &amp; confidential enquiries</p>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail__label">WhatsApp</span>
+            <a href="https://wa.me/917736796809" target="_blank" rel="noopener noreferrer">+91 7736796809</a>
+            
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail__label">LinkedIn</span>
+            <a href="https://linkedin.com/company/worqsense" target="_blank" rel="noopener noreferrer">linkedin.com/company/worqsense</a>
+          </div>
+        </div>
+
+        <div style="margin-top:var(--s-8);border-top:1px solid var(--hair);padding-top:var(--s-8);">
+          <h3 style="font-size:.88rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-faint);margin-bottom:var(--s-5);font-weight:600;">Where we work</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s-4);">
+            <div>
+              <p style="font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--text-faint);margin-bottom:var(--s-2);">India</p>
+              <p style="font-size:.93rem;font-weight:600;color:var(--text);margin-bottom:var(--s-1);">Bangalore &amp; Thiruvananthapuram</p>
+              <p style="font-size:.88rem;color:var(--text-muted);">Virtually nationwide</p>
+              <a href="india.html" style="font-size:.83rem;color:var(--accent);font-weight:600;display:inline-block;margin-top:var(--s-2);">India context &#8594;</a>
+            </div>
+            <div>
+              <p style="font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--text-faint);margin-bottom:var(--s-2);">New Zealand</p>
+              <p style="font-size:.93rem;font-weight:600;color:var(--text);margin-bottom:var(--s-1);">Dunedin</p>
+              <p style="font-size:.88rem;color:var(--text-muted);">Virtually nationwide</p>
+              <a href="nz.html" style="font-size:.83rem;color:var(--accent);font-weight:600;display:inline-block;margin-top:var(--s-2);">NZ context &#8594;</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:var(--s-8);background:var(--paper-sunk);padding:var(--s-6);border-radius:var(--radius);">
+          <h4 style="font-size:.88rem;margin-bottom:var(--s-3);color:var(--text);">Training enquiries</h4>
+          <p style="color:var(--text-muted);font-size:.88rem;margin-bottom:var(--s-3);">For training programmes, please include:</p>
+          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:var(--s-2);">
+            <li style="display:flex;gap:var(--s-3);color:var(--text-muted);font-size:.88rem;"><span style="color:var(--accent);">&#8594;</span>Team size and current experience level</li>
+            <li style="display:flex;gap:var(--s-3);color:var(--text-muted);font-size:.88rem;"><span style="color:var(--accent);">&#8594;</span>India or New Zealand</li>
+            <li style="display:flex;gap:var(--s-3);color:var(--text-muted);font-size:.88rem;"><span style="color:var(--accent);">&#8594;</span>Preferred delivery format</li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHAT TO EXPECT ───────────────────────────────────────────────────────── -->
+<section class="section section--sunk" aria-labelledby="expect-heading">
+  <div class="container">
+    <div class="section-head" data-animate>
+      <h2 id="expect-heading">What happens next.</h2>
+    </div>
+    <div class="steps-h" data-animate>
+      <div class="step-h">
+        <div class="step-h__num" aria-hidden="true">1</div>
+        <h4>We respond</h4>
+        <p>You'll hear from us within one business day.</p>
+      </div>
+      <div class="step-h">
+        <div class="step-h__num" aria-hidden="true">2</div>
+        <h4>A real call</h4>
+        <p>A short call to understand what's happening. We listen more than we talk at this stage.</p>
+      </div>
+      <div class="step-h">
+        <div class="step-h__num" aria-hidden="true">3</div>
+        <h4>Honest thinking</h4>
+        <p>After the call: what we see, what we'd recommend, and whether we can help.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="WORQsense">
+        <p class="footer__tag">Building Investigative Capability &middot; Delivering Defensible Outcomes</p>
+        <p>Investigations led by Sreevidya Varma (AWI Certificate Holder, AWI-CH). Training delivered with Supriya Menon, in partnership with Interview Management Solutions (IMS, Australia). Primarily serving India. Also available in New Zealand.</p>
+      </div>
+      <div class="footer__col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="investigations.html">Investigations</a></li>
+          <li><a href="skill-building.html">Training</a></li>
+          </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="nz.html">New Zealand</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Get in touch</h5>
+        <ul>
+          <li><a href="contact.html">Get in touch &rarr;</a></li>
+          <li><a href="https://wa.me/917736796809" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="https://linkedin.com/company/worqsense" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 WORQsense. All rights reserved.</span>
+      <span> worqsense.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

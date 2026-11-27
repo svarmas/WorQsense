@@ -44,9 +44,15 @@
   </url>
   <url>
     <loc>https://worqsense.com/resources.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://worqsense.com/worqsense-posh-investigation-timeline.pdf</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://worqsense.com/privacy.html</loc>
