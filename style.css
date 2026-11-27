@@ -1692,3 +1692,12 @@ body[data-hero="split"] .hero__label {
   .profile__bio, .profile__glance { padding:var(--s-6); }
   .profile__role { font-size:var(--text-md); }
 }
+
+/* Nav: keep seven menu items on one line on smaller laptops */
+.nav__link { white-space:nowrap; }
+@media (min-width:1041px) and (max-width:1220px){
+  .nav__inner { gap:var(--s-4); }
+  .nav__link { padding:.5rem .55rem; }
+  .nav__link.active::after { left:.55rem; right:.55rem; }
+  .nav__actions .btn { padding-left:1.1rem; padding-right:1.1rem; font-size:.85rem; }
+}
